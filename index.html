@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GATOS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fefefe;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #f8a5c2, #f78fb3);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h2 {
+            color: #e84393;
+        }
+
+        .cat-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: block;
+            margin: 20px auto;
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        footer {
+            text-align: center;
+            background: #f8a5c2;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🐾 Gatos</h1>
+    </header>
+    <div class="content">
+        <h2>¿Qué hace a los gatos tan especiales?</h2>
+        <p>Los gatos son animales domésticos conocidos por su elegancia, independencia y carácter misterioso. Son excelentes cazadores y compañeros tranquilos que pueden adaptarse a distintos entornos.</p>
+
+        <h2>Datos curiosos</h2>
+        <ul>
+            <li>Un gato puede saltar hasta 6 veces su altura.</li>
+            <li>Tienen 32 músculos en cada oreja, lo que les permite moverlas independientemente.</li>
+            <li>El ronroneo puede ser una forma de comunicarse o incluso de curarse a sí mismos.</li>
+        </ul>
+
+        <img class="cat-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHLBu6XMHQnMaQjjubXpYPe6XZOnH9Zdsz2Q&s">
+
+        <h2>Comportamiento</h2>
+        <p>Los gatos son animales territoriales y muy limpios. Usan su lengua áspera para acicalarse y marcan su espacio con feromonas. Aunque parezcan distantes, pueden crear vínculos muy fuertes con sus dueños.</p>
+    </div>
+
+    <footer>
+        <p>🐱🐱🐱🐱🐱🐱🐱🐱🐱🐱</p>
+    </footer>
+
+</body>
+</html>
